@@ -1,0 +1,129 @@
+* {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-size: 18px;
+
+    border-radius: 12px;
+    text-shadow: black;
+    
+    transition-property: background;
+    transition-duration: 0.1s;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#clock,
+#cpu,
+#temperature,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#mode,
+#window,
+#custom-power,
+#custom-menu,
+#workspaces {
+    margin-top: 6px;
+    padding: 0 12px;
+}
+
+#workspaces {
+    padding: 4px;
+    background: rgba(33, 33, 33, 0.9);
+	transition: none;
+
+    font-size: 12px;
+}
+
+#workspaces :first-child {
+    margin-left: 0;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    background: rgba(255, 255, 255, 0.320);
+}
+
+#workspaces button.focused {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+#workspaces button.empty {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+#workspaces button.active {
+    background: #ffffff;
+    color: #1f1f1f;
+}
+
+#workspaces button.urgent {
+    background-color: #ff0400;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+.modules-left > widget:first-child > * {
+    margin-left: 12px;
+}
+
+.modules-right > widget:last-child > * {
+    margin-right: 12px;
+}
+
+#clock {
+    background: #202020;
+    color: #ffffff;
+}
+
+#cpu {
+    background: #202020;
+    color: #ffffff;
+}
+
+#memory {
+    background: #202020;
+    color: #ffffff;
+}
+
+#pulseaudio {
+    background: #202020;
+    color: #ffffff;
+}
+
+#network {
+    background: #202020;
+    color: #ffffff;
+}
+
+#tray {
+    background: rgba(33, 33, 33, 0.9);
+}
+
+#window {
+    font-family: 'Ubuntu Mono', 'Comfortaa', sans-serif;
+    font-weight: 400;
+    background: rgba(33, 33, 33, 0.9);
+    color: #ffffff;
+}
+
+#temperature {
+    background: #202020;
+    color: #ffffff;
+}
