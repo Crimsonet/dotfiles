@@ -1,4 +1,4 @@
-![desktop.preview.png](preview%2Fdesktop.preview.jpg)
+![desktop.preview.png](preview%2Fdesktop.preview.png)
 
 𝚃𝚑𝚒𝚜 𝚛𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚢 𝚜𝚝𝚘𝚛𝚎𝚜 𝚖𝚢 𝚐𝚎𝚗𝚝𝚘𝚘 𝚕𝚒𝚗𝚞𝚡 𝚍𝚎𝚜𝚔𝚝𝚘𝚙 𝚌𝚘𝚗𝚏𝚒𝚐𝚞𝚛𝚊𝚝𝚒𝚘𝚗 𝚞𝚜𝚒𝚗𝚐 𝚑𝚢𝚙𝚛𝚕𝚊𝚗𝚍.
 𝚃𝚑𝚎 𝚖𝚊𝚒𝚗 𝚋𝚛𝚊𝚗𝚌𝚑 𝚠𝚒𝚕𝚕 𝚋𝚎 𝚒𝚗 𝚜𝚢𝚗𝚌 𝚠𝚒𝚝𝚑 𝚝𝚑𝚎 𝚌𝚘𝚗𝚏𝚒𝚐𝚞𝚛𝚊𝚝𝚒𝚘𝚗 𝚘𝚗 𝚖𝚢 𝚖𝚊𝚌𝚑𝚒𝚗𝚎.
