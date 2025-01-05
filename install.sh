@@ -69,7 +69,7 @@ cp hypr/hyprland.conf ~/.config/hypr/
 echo "[$(date +%T)] >>> hypr/hyprland.conf has been installed."
 cp hypr/hyprlock.conf ~/.config/hypr/
 echo "[$(date +%T)] >>> hypr/hyprlock.conf has been installed."
-cp hypr/hyprlock.conf.bak ~/.config/hypr/
+cp hypr/hyprlock.conf.back ~/.config/hypr/
 echo "[$(date +%T)] >>> hypr/hyprlock.conf.bak has been installed."
 cp hypr/hyprpaper.conf ~/.config/hypr/
 echo "[$(date +%T)] >>> hypr/hyprpaper.conf has been installed."
@@ -108,10 +108,13 @@ if [ -f /etc/arch-release ]; then
   echo "System: Arch Linux"
 
   # Install packages using pacman without confirmation
-  sudo pacman -S --noconfirm linux-zen linux-zen-headers hyprland hyprlock hyprpaper hyprcursor hyprgraphics hyprutils waybar sddm gnome alacritty fish eza mission-center nautilus fcitx5 rime-double-pinyin pipewire vlc code vim vi nano wl-clipboard grim
-
   # Install necessary dependencies for yay and clone yay from AUR
-  sudo pacman -S --noconfirm git base-devel
+
+  packages=(
+      "linux-zen" "linux-zen-headers" "hyprland" "hyprlock" "hyprpaper" "hyprcursor" "hyprgraphics" "hyprutils" "waybar" "sddm" "gnome" "alacritty" "fish" "eza" "mission-center" "nautilus" "fcitx5" "rime-double-pinyin" "pipewire" "vlc" "code" "vim" "vi" "nano" "wl-clipboard" "grim" "noto-fonts-cjk" "noto-fonts-emoji" "ttf-cascadia-code" "ttf-cascadia-code-nerd" "ttf-cascadia-mono-nerd" "git" "base-devel"
+  )
+
+  sudo pacman -S --noconfirm --needed "${packages[@]}"
 
   sudo rm -rf ~/.cache/yay/
   git clone https://aur.archlinux.org/yay.git ~/.cache/yay/
@@ -123,13 +126,21 @@ if [ -f /etc/arch-release ]; then
   cd ..
   sudo rm -rf yay
 
+  # shellcheck disable=SC2164
+  cd /etc/modprobe.d
+  sudo touch hid_apple.conf
+  sudo echo options hid_apple fnmode=2 > hid_apple.conf
+  # Reboot to apply
+
+  yay -S --noconfirm --needed tofi
+
   # Check if AMD GPU is present
   lspci | grep -q 'VGA.*AMD'
   # shellcheck disable=SC2181
   if [ $? -eq 0 ]; then
       echo "Detected AMD GPU."
       # Install AMD GPU drivers
-      sudo pacman -S --noconfirm mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon
+      sudo pacman -S --noconfirm --needed mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon
   fi
 
   # Check if Intel GPU is present
@@ -138,7 +149,7 @@ if [ -f /etc/arch-release ]; then
   if [ $? -eq 0 ]; then
       echo "Detected Intel GPU."
       # Install Intel GPU drivers
-      sudo pacman -S --noconfirm mesa lib32-mesa vulkan-intel lib32-vulkan-intel
+      sudo pacman -S --noconfirm --needed mesa lib32-mesa vulkan-intel lib32-vulkan-intel
   fi
 
   # Check if NVIDIA GPU is present
@@ -147,7 +158,7 @@ if [ -f /etc/arch-release ]; then
   if [ $? -eq 0 ]; then
       echo "Detected NVIDIA GPU."
       # Install NVIDIA GPU drivers
-      sudo pacman -S --noconfirm nvidia nvidia-utils
+      sudo pacman -S --noconfirm --needed nvidia nvidia-utils
   fi
 
 # Check if the system is Gentoo Linux

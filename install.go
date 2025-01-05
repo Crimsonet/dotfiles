@@ -3,7 +3,7 @@
  *	@Author : Crimsonet
  *	@Repo   : dotfiles
  *	@File   : install
- *	@Time   : 1/1/25
+ *	@Time   : 1/5/25
  *	@IDE    : GoLand
  */
 
