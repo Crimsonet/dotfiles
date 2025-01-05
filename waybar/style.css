@@ -117,8 +117,6 @@ window#waybar.hidden {
 }
 
 #window {
-    font-family: 'Ubuntu Mono', 'Comfortaa', sans-serif;
-    font-weight: 400;
     background: rgba(33, 33, 33, 0.9);
     color: #ffffff;
 }

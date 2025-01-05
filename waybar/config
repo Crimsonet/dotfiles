@@ -26,7 +26,7 @@
     "clock": {
         "interval": 1,
         "format": "\u2006\uf017   {:%H:%M:%S  \uf133   %m-%d\u2006/\u2006%Y}\u2006",
-        "tooltip-format": " Take a break, write some code, do what u do best. "
+        "tooltip-format": " 𝑇𝑎𝑘𝑒 𝑎 𝑏𝑟𝑒𝑎𝑘, 𝑤𝑟𝑖𝑡𝑒 𝑠𝑜𝑚𝑒 𝑐𝑜𝑑𝑒, 𝑑𝑜 𝑤ℎ𝑎𝑡 𝑢 𝑑𝑜 𝑏𝑒𝑠𝑡. "
     },
     "cpu": {
         "interval": 1,

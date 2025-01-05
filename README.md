@@ -1,8 +1,42 @@
-![desktop.preview.png](preview%2Fdesktop.preview.png)
+<div align="center">
+    <img src="https://img.shields.io/github/last-commit/Crimsonet/dotfiles?style=for-the-badge&color=ffb4a2&labelColor=201a19">
+    <img src="https://img.shields.io/github/stars/Crimsonet/dotfiles?style=for-the-badge&color=e6c419&labelColor=1d1b16">
+    <img src="https://img.shields.io/github/repo-size/Crimsonet/dotfiles?style=for-the-badge&color=a8c7ff&labelColor=1a1b1f">
+</div>
 
-𝚃𝚑𝚒𝚜 𝚛𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚢 𝚜𝚝𝚘𝚛𝚎𝚜 𝚖𝚢 𝚕𝚒𝚗𝚞𝚡 𝚍𝚎𝚜𝚔𝚝𝚘𝚙 𝚌𝚘𝚗𝚏𝚒𝚐𝚞𝚛𝚊𝚝𝚒𝚘𝚗 𝚞𝚜𝚒𝚗𝚐 𝚑𝚢𝚙𝚛𝚕𝚊𝚗𝚍.    
-𝚃𝚑𝚎 𝚖𝚊𝚒𝚗 𝚋𝚛𝚊𝚗𝚌𝚑 𝚠𝚒𝚕𝚕 𝚋𝚎 𝚒𝚗 𝚜𝚢𝚗𝚌 𝚠𝚒𝚝𝚑 𝚝𝚑𝚎 𝚌𝚘𝚗𝚏𝚒𝚐𝚞𝚛𝚊𝚝𝚒𝚘𝚗 𝚘𝚗 𝚖𝚢 𝚖𝚊𝚌𝚑𝚒𝚗𝚎.
+![desktop.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/desktop.preview.png)
+![lockscreen.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/lockscreen.preview.png)
 
-𝙵𝚘𝚕𝚕𝚘𝚠𝚜 𝚝𝚑𝚎 𝚄𝚗𝚕𝚒𝚌𝚎𝚗𝚜𝚎 𝚊𝚐𝚛𝚎𝚎𝚖𝚎𝚗𝚝, 𝚊𝚗𝚍 𝚎𝚟𝚎𝚛𝚢𝚘𝚗𝚎 𝚒𝚜 𝚏𝚛𝚎𝚎 𝚝𝚘 𝚞𝚜𝚎, 𝚖𝚘𝚍𝚒𝚏𝚢, 𝚊𝚗𝚍 𝚍𝚒𝚜𝚝𝚛𝚒𝚋𝚞𝚝𝚎 𝚝𝚑𝚎 𝚛𝚎𝚕𝚎𝚟𝚊𝚗𝚝 𝚌𝚘𝚗𝚏𝚒𝚐𝚞𝚛𝚊𝚝𝚒𝚘𝚗 𝚌𝚘𝚗𝚝𝚎𝚗𝚝, 𝚊𝚜 𝚍𝚎𝚝𝚊𝚒𝚕𝚎𝚍 𝚒𝚗 𝚝𝚑𝚎 𝙻𝙸𝙲𝙴𝙽𝚂𝙴 𝚏𝚒𝚕𝚎.
+This repository stores Linux desktop configurations based on Hyprland.
+The contents of the repository include various configuration files and tools, 
+such as those for system environments, desktop layouts, and so on.
 
-𝚝𝚑𝚎 **𝚄𝚗𝚕𝚒𝚌𝚎𝚗𝚜𝚎** 𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎 & 𝙰𝙼𝙳 **𝚁𝟿 𝟿𝟿𝟻𝟶𝚡**, 𝙻𝚒𝚗𝚞𝚡 𝟼.𝟷𝟸.𝟽-𝚣𝚎𝚗𝟷-𝟷-**𝚣𝚎𝚗**.
+| **Keys**            | **Application** | **Behavior**     |
+|---------------------|-----------------|------------------|
+| Alt, C              | None            | Close Window     |
+| Alt, A              | alacritty       | Default Terminal |
+| Alt, E              | nautilus        | File Management  |
+| Alt, V              | None            | Window Floating  |
+| Alt, R              | Tofi            | App Launcher     |
+| Alt, P              | Dwindle         | Window Alignment |
+| Alt, Y              | Kitty           | Open Kitty       |
+| Alt, F              | None            | Full Screen      |
+| Alt, L              | Hyprlock        | Screen Lock      |
+| Alt, SHIFT, M       | Hyprland        | Return to SDDM   |
+| Alt, left           | Hyprland        | Switch Workspace |
+| Alt, right          | Hyprland        | Switch Workspace |
+| Alt, $Number        | Hyprland        | Switch Workspace |
+| Alt, Tab            | Hyprland        | Return Workspace |
+| Alt, *LDrag*        | Hyprland        | Move Window      |
+| Alt, *RDrag*        | Hyprland        | Resize Window    |
+| Alt, CTRL, SUPER, R | Waybar          | Restart Waybar   |
+| CTRL, SHIFT, TAB    | MissionCenter   | Task Manager     |
+| CTRL, SHIFT, F12    | SystemMonitor   | Resource Monitor |
+| SUPER, left         | Hyprland        | Switch Focus     |
+| SUPER, right        | Hyprland        | Switch Focus     |
+| SUPER, up           | Hyprland        | Switch Focus     |
+| SUPER, down         | Hyprland        | Switch Focus     |
+
+This repository follows the Unlicense agreement, and everyone is free to use,
+modify, and distribute the relevant configuration contents.
+If you have any questions or suggestions, feel free to give us feedback at any time.

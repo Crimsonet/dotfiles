@@ -111,7 +111,7 @@ if [ -f /etc/arch-release ]; then
   # Install necessary dependencies for yay and clone yay from AUR
 
   packages=(
-      "linux-zen" "linux-zen-headers" "hyprland" "hyprlock" "hyprpaper" "hyprcursor" "hyprgraphics" "hyprutils" "waybar" "sddm" "gnome" "alacritty" "fish" "eza" "mission-center" "nautilus" "fcitx5" "rime-double-pinyin" "pipewire" "vlc" "code" "vim" "vi" "nano" "wl-clipboard" "grim" "noto-fonts-cjk" "noto-fonts-emoji" "ttf-cascadia-code" "ttf-cascadia-code-nerd" "ttf-cascadia-mono-nerd" "git" "base-devel"
+      "linux-zen" "linux-zen-headers" "hyprland" "hyprlock" "hyprpaper" "hyprcursor" "hyprgraphics" "hyprutils" "waybar" "sddm" "gnome" "alacritty" "fish" "eza" "mission-center" "nautilus" "fcitx5" "rime-double-pinyin" "pipewire" "vlc" "code" "vim" "vi" "nano" "wl-clipboard" "grim" "noto-fonts-cjk" "noto-fonts-emoji" "git" "base-devel"
   )
 
   sudo pacman -S --noconfirm --needed "${packages[@]}"
@@ -129,6 +129,7 @@ if [ -f /etc/arch-release ]; then
   # shellcheck disable=SC2164
   cd /etc/modprobe.d
   sudo touch hid_apple.conf
+  # shellcheck disable=SC2024
   sudo echo options hid_apple fnmode=2 > hid_apple.conf
   # Reboot to apply
 
