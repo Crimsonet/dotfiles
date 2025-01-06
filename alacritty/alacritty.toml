@@ -1,4 +1,3 @@
-
 [cursor.style]
 blinking = "On"
 shape = "Beam"
@@ -63,5 +62,3 @@ y = 16
 
 [general]
 import = ["~/.config/alacritty/base16_default_dark.toml"]
-
-[terminal]

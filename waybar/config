@@ -16,7 +16,7 @@
         "on-scroll-down": "hyprctl dispatch workspace e-1"
     },
     "hyprland/window": {
-        "format": "\u2006  run:\u2006{initialTitle}",
+        "format": "🍁 run:\u2006{initialTitle}",
         "separate-outputs": true
     },
     "tray": {
@@ -26,7 +26,7 @@
     "clock": {
         "interval": 1,
         "format": "\u2006\uf017   {:%H:%M:%S  \uf133   %m-%d\u2006/\u2006%Y}\u2006",
-        "tooltip-format": " 𝑇𝑎𝑘𝑒 𝑎 𝑏𝑟𝑒𝑎𝑘, 𝑤𝑟𝑖𝑡𝑒 𝑠𝑜𝑚𝑒 𝑐𝑜𝑑𝑒, 𝑑𝑜 𝑤ℎ𝑎𝑡 𝑢 𝑑𝑜 𝑏𝑒𝑠𝑡. "
+        "tooltip-format": " 𝑻𝒂𝒌𝒆 𝒂 𝒃𝒓𝒆𝒂𝒌, 𝒘𝒓𝒊𝒕𝒆 𝒔𝒐𝒎𝒆 𝒄𝒐𝒅𝒆, 𝒅𝒐 𝒘𝒉𝒂𝒕 𝒖 𝒅𝒐 𝒃𝒆𝒔𝒕. "
     },
     "cpu": {
         "interval": 1,

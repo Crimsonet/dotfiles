@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+    <match target="font">
+        <edit name="antialias" mode="assign">
+            <bool>true</bool>
+        </edit>
+        <edit name="hinting" mode="assign">
+            <bool>false</bool>
+        </edit>
+        <edit name="hintstyle" mode="assign">
+            <const>hintnone</const>
+        </edit>
+        <edit name="rgba" mode="assign">
+            <const>none</const>
+        </edit>
+        <edit name="autohint" mode="assign">
+            <bool>false</bool>
+        </edit>
+        <edit name="lcdfilter" mode="assign">
+            <const>lcdnone</const>
+        </edit>
+        <edit name="dpi" mode="assign">
+            <double>96</double>
+        </edit>
+    </match>
+	<!-- Font fallbacks -->
+	<alias>
+		<family>sans-serif</family>
+		<prefer>
+			<family>Noto Sans CJK TC</family>
+		</prefer>
+	</alias>
+    <alias>
+		<family>serif</family>
+		<prefer>
+			<family>Noto Serif CJK TC</family>
+		</prefer>
+	</alias>
+    <alias>
+		<family>monospace</family>
+		<prefer>
+			<family>Fira Code</family>
+		</prefer>
+	</alias>
+    <!-- Inconsolata terminal font fallback -->
+    <alias>
+        <family>Inconsolata</family>
+        <prefer>
+            <family>Inconsolata</family>
+            <family>Noto Sans CJK TC</family>
+        </prefer>
+    </alias>
+	<!-- Fcitx5 emoji anit-aliasing disabling -->
+	<match target="font">
+		<test name="family" qual="first">
+			<string>Noto Color Emoji</string>
+		</test>
+		<edit mode="assign" name="antialias">
+			<bool>false</bool>
+		</edit>
+	</match>
+</fontconfig>
