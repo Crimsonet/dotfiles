@@ -1,5 +1,5 @@
-![desktop.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/desktop.preview.png)
-![lockscreen.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/lockscreen.preview.png)
+![desktop.preview.png](https://https://github.com/Crimsonet/Crimsonet/blob/main/preview/desktop.preview.png)
+![lockscreen.preview.png](https://https://github.com/Crimsonet/Crimsonet/blob/main/preview/lockscreen.preview.png)
 
 <div align="center">
     <img src="https://img.shields.io/github/last-commit/Crimsonet/dotfiles?style=for-the-badge&color=ffb4a2&labelColor=201a19" alt="last-commit">
@@ -33,20 +33,23 @@ such as those for system environments, desktop layouts, and so on.
 | SUPER, right        | Hyprland                   | Switch Focus         |
 | SUPER, up           | Hyprland                   | Switch Focus         |
 | SUPER, down         | Hyprland                   | Switch Focus         |
+| Alt, CTRL, SUPER, H | Hyprland                   | Restart Hyprland     |
+| Alt, CTRL, SUPER, W | Waybar                     | Restart Waybar       |
 | CTRL, SHIFT, TAB    | MissionCenter              | Task Manager         |
 | CTRL, SHIFT, F12    | SystemMonitor              | Resource Monitor     |
-| Alt, CTRL, SUPER, R | Waybar                     | Restart Waybar       |
 
 This repository follows the Unlicense agreement, and everyone is free to use,
 modify, and distribute the relevant configuration contents.
 If you have any questions or suggestions, feel free to give us feedback at any time.
 
-| **𝐇𝐚𝐫𝐝𝐰𝐚𝐫𝐞 𝐁𝐮𝐢𝐥𝐝 𝐈𝐧𝐟𝐨** | **𝐁𝐫𝐚𝐧𝐝** | **𝐌𝐨𝐝𝐞𝐥**   |
-|------------------------------------------|----------------|------------------|
-| CPU                                      | AMD            | Ryzen 9 9950x    |
-| GPU                                      | AMD            | Radeon Graphics  |
-| Monitor                                  | HKC            | C299Q 21:9 75Hz  |
-| NVMe                                     | SAMSUNG        | PM9A1 512 GiB    | 
+| **𝐁𝐚𝐬𝐞** | **𝐎𝐩𝐞𝐧 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐞𝐩𝐨𝐬 𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞𝐝/𝐔𝐬𝐞𝐝** |
+|--------------|--------------------------------------------------------------------|
+| Hyprland     | https://github.com/Isoheptane/dotfiles                             |
+| Hyprland     | https://github.com/Tsuisteep/dotfiles                              |
+| Hyprlock     | https://github.com/linkfrg/dotfiles                                |
+| Hyprcursor   | https://github.com/hyprwm/hyprcursor                               |
+| Waybar       | https://github.com/Isoheptane/dotfiles                             |
+| SDDM         | https://github.com/EliverLara/Sweet                                |
 
 | **𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐁𝐮𝐢𝐥𝐝 𝐈𝐧𝐟𝐨** | **𝐑𝐞𝐥𝐞𝐚𝐬𝐞** | **𝐕𝐞𝐫𝐬𝐢𝐨𝐧** |
 |------------------------------------------|--------------------|--------------------|
@@ -56,9 +59,16 @@ If you have any questions or suggestions, feel free to give us feedback at any t
 | Waybar                                   | arch-release       | 0.11.0             |
 | fcitx5                                   | arch-release       | 5.1.11             |
 | fish                                     | arch-release       | 3.7.1              |
-| mako                                     | aur:mako.git       | a7c5d46            |
-| tofi                                     | aur:tofi.git       | 1eb6137            |
+| mako                                     | aur:mako           | a7c5d46            |
+| tofi                                     | aur:tofi           | 1eb6137            |
 | Default Editor (cli)                     | vim                | 9.1.954            |
 | Default Editor (GUI)                     | vs-code            | x64-1.96.2         |
 | Go IDE                                   | JetBrains          | 2024.3.1           | 
 | Cpp IDE                                  | JetBrains          | 2024.3.1           |
+
+| **𝐇𝐚𝐫𝐝𝐰𝐚𝐫𝐞 𝐁𝐮𝐢𝐥𝐝 𝐈𝐧𝐟𝐨** | **𝐁𝐫𝐚𝐧𝐝** | **𝐌𝐨𝐝𝐞𝐥**   |
+|------------------------------------------|----------------|------------------|
+| CPU                                      | AMD            | Ryzen 9 9950x    |
+| GPU                                      | AMD            | Radeon Graphics  |
+| Monitor                                  | HKC            | C299Q 21:9 75Hz  |
+| NVMe                                     | SAMSUNG        | PM9A1 512 GiB    |
