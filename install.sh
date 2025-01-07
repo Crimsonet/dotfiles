@@ -11,7 +11,7 @@
 green='\033[0;32m'
 reset='\033[0m'
 # shellcheck disable=SC2016
-username='$USER'
+username="$USER"
 
 gentooPackages=(
 	"sys-kernel/linux-zen"
@@ -79,73 +79,76 @@ archPackages=(
 	"base-devel"
 )
 
+# Create directories and copy fish configuration files
+mkdir -p /home/"${username}"/.config/fish
+cp fish/conf.d/* /home/"${username}"/.config/fish/conf.d/
+echo -e "${green}[$(date +%T)]${reset} >>> fish/conf.d/* has been installed."
+cp fish/config.fish /home/"${username}"/.config/fish/
+echo -e "${green}[$(date +%T)]${reset} >>> fish/config.fish has been installed."
+cp fish/fish_variables /home/"${username}"/.config/fish/
+echo -e "${green}[$(date +%T)]${reset} >>> fish/fish_variables has been installed."
+cp fish/functions/* /home/"${username}"/.config/fish/functions/
+echo -e "${green}[$(date +%T)]${reset} >>> fish/functions/* has been installed."
+sudo cp -r fish/ /root/.config/
+echo -e "${green}[$(date +%T)]${reset} >>> fish config has been installed for root."
+
 # Create directories and copy font and fontconfig configuration files
 sudo mkdir -p /etc/fonts
 sudo cp annex/fonts/'Proxima Nova.ttf' /etc/fonts/conf.d/
 echo -e "${green}[$(date +%T)]${reset} >>> annex/fonts/'Proxima Nova.ttf' has been installed."
-cp fontconfig/conf.d/* /home/${username}/.config/fontconfig/conf.d/
+cp fontconfig/conf.d/* /home/"${username}"/.config/fontconfig/conf.d/
 echo -e "${green}[$(date +%T)]${reset} >>> fontconfig/conf.d/* has been installed."
-cp fontconfig/fonts.conf /home/${username}/.config/fontconfig/
+cp fontconfig/fonts.conf /home/"${username}"/.config/fontconfig/
 echo -e "${green}[$(date +%T)]${reset} >>> fontconfig/fonts.conf has been installed."
-cp fontconfig/fonts.conf.back /home/${username}/.config/fontconfig/
+cp fontconfig/fonts.conf.back /home/"${username}"/.config/fontconfig/
 echo -e "${green}[$(date +%T)]${reset} >>> fontconfig/fonts.conf.back has been installed."
 # Create directories and copy fcitx5 configuration files
-mkdir -p /home/${username}/.config/fcitx5
-sudo cp -r fcitx5/conf/* /home/${username}/.config/fcitx5/
+mkdir -p /home/"${username}"/.config/fcitx5
+sudo cp -r fcitx5/conf/* /home/"${username}"/.config/fcitx5/
 echo -e "${green}[$(date +%T)]${reset} >>> fcitx5/conf/* has been installed."
-sudo cp -r fcitx5/theme/* /home/${username}/.local/share/fcitx5/themes/
+sudo cp -r fcitx5/theme/* /home/"${username}"/.local/share/fcitx5/themes/
 echo -e "${green}[$(date +%T)]${reset} >>> fcitx5/theme/* has been installed."
-cp fcitx5/config /home/${username}/.config/fcitx5/
+cp fcitx5/config /home/"${username}"/.config/fcitx5/
 echo -e "${green}[$(date +%T)]${reset} >>> fcitx5/config has been installed."
-cp fcitx5/profile /home/${username}/.config/fcitx5/
+cp fcitx5/profile /home/"${username}"/.config/fcitx5/
 echo -e "${green}[$(date +%T)]${reset} >>> fcitx5/profile has been installed."
 # Create directories and copy sddm theme files
-sudo mkdir -p /home/${username}/.local/share/sddm/themes/arknt
+sudo mkdir -p /home/"${username}"/.local/share/sddm/themes/arknt
 sudo cp -r arknt/* /usr/share/sddm/themes/arknt/
 echo -e "${green}[$(date +%T)]${reset} >>> arknt/* has been installed."
 # Create directories and copy alacritty configuration files
-mkdir -p /home/${username}/.config/alacritty
-cp alacritty/alacritty.toml /home/${username}/.config/alacritty/
+mkdir -p /home/"${username}"/.config/alacritty
+cp alacritty/alacritty.toml /home/"${username}"/.config/alacritty/
 echo -e "${green}[$(date +%T)]${reset} >>> alacritty.toml has been installed."
-cp alacritty/base16_default_dark.toml /home/${username}/.config/alacritty/
+cp alacritty/base16_default_dark.toml /home/"${username}"/.config/alacritty/
 echo -e "${green}[$(date +%T)]${reset} >>> base16_default_dark.toml has been installed."
-# Create directories and copy fish configuration files
-mkdir -p /home/${username}/.config/fish
-cp fish/conf.d/* /home/${username}/.config/fish/conf.d/
-echo -e "${green}[$(date +%T)]${reset} >>> fish/conf.d/* has been installed."
-cp fish/config.fish /home/${username}/.config/fish/
-echo -e "${green}[$(date +%T)]${reset} >>> fish/config.fish has been installed."
-cp fish/fish_variables /home/${username}/.config/fish/
-echo -e "${green}[$(date +%T)]${reset} >>> fish/fish_variables has been installed."
-cp fish/functions/* /home/${username}/.config/fish/functions/
-echo -e "${green}[$(date +%T)]${reset} >>> fish/functions/* has been installed."
 # Create directories and copy hypr configuration files
-mkdir -p /home/${username}/.config/hypr
-cp hypr/hyprland.conf /home/${username}/.config/hypr/
+mkdir -p /home/"${username}"/.config/hypr
+cp hypr/hyprland.conf /home/"${username}"/.config/hypr/
 echo -e "${green}[$(date +%T)]${reset} >>> hypr/hyprland.conf has been installed."
-cp hypr/hyprlock.conf /home/${username}/.config/hypr/
+cp hypr/hyprlock.conf /home/"${username}"/.config/hypr/
 echo -e "${green}[$(date +%T)]${reset} >>> hypr/hyprlock.conf has been installed."
-cp hypr/hyprlock.conf.back /home/${username}/.config/hypr/
+cp hypr/hyprlock.conf.back /home/"${username}"/.config/hypr/
 echo -e "${green}[$(date +%T)]${reset} >>> hypr/hyprlock.conf.bak has been installed."
-cp hypr/hyprpaper.conf /home/${username}/.config/hypr/
+cp hypr/hyprpaper.conf /home/"${username}"/.config/hypr/
 echo -e "${green}[$(date +%T)]${reset} >>> hypr/hyprpaper.conf has been installed."
 # Create directories and copy kitty configuration files
-mkdir -p /home/${username}/.config/kitty
-cp kitty/kitty.conf /home/${username}/.config/kitty/
+mkdir -p /home/"${username}"/.config/kitty
+cp kitty/kitty.conf /home/"${username}"/.config/kitty/
 echo -e "${green}[$(date +%T)]${reset} >>> kitty/kitty.conf has been installed."
 # Create directories and copy mako configuration files
-mkdir -p /home/${username}/.config/mako
-cp mako/config /home/${username}/.config/mako/
+mkdir -p /home/"${username}"/.config/mako
+cp mako/config /home/"${username}"/.config/mako/
 echo -e "${green}[$(date +%T)]${reset} >>> mako/config has been installed."
 # Create directories and copy tofi configuration files
-mkdir -p /home/${username}/.config/tofi
-cp tofi/config /home/${username}/.config/tofi/
+mkdir -p /home/"${username}"/.config/tofi
+cp tofi/config /home/"${username}"/.config/tofi/
 echo -e "${green}[$(date +%T)]${reset} >>> tofi/config has been installed."
 # Create directories and copy waybar configuration files
-mkdir -p /home/${username}/.config/waybar
-cp waybar/config /home/${username}/.config/waybar/
+mkdir -p /home/"${username}"/.config/waybar
+cp waybar/config /home/"${username}"/.config/waybar/
 echo -e "${green}[$(date +%T)]${reset} >>> waybar/config has been installed."
-cp waybar/style.css /home/${username}/.config/waybar/
+cp waybar/style.css /home/"${username}"/.config/waybar/
 echo -e "${green}[$(date +%T)]${reset} >>> waybar/style.css has been installed."
 
 sleep 0.5s
@@ -161,12 +164,15 @@ if [ -f /etc/arch-release ]; then
 
 	sudo pacman -S --noconfirm --needed "${archPackages[@]}"
 
+	chsh -s /usr/bin/fish root
+	sudo chsh -s /usr/bin/fish root
+
 	xdg-mime default org.gnome.Nautilus.desktop inode/directory
 
-	sudo rm -rf /home/${username}/.cache/yay/
-	git clone https://aur.archlinux.org/yay.git /home/${username}/.cache/yay/
+	sudo rm -rf /home/"${username}"/.cache/yay/
+	git clone https://aur.archlinux.org/yay.git /home/"${username}"/.cache/yay/
 	# shellcheck disable=SC2164
-	cd /home/${username}/.cache/yay
+	cd /home/"${username}"/.cache/yay
 	makepkg -si
 	# shellcheck disable=SC2288
 	# shellcheck disable=SC2103
