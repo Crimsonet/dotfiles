@@ -16,8 +16,9 @@ such as those for system environments, desktop layouts, and so on.
 | Alt, A              | Alacritty                  | Default Terminal     |
 | Alt, E              | Nautilus                   | File Management      |
 | Alt, R              | Tofi                       | App Launcher         |
-| Alt, P              | Dwindle                    | Window Alignment     |
 | Alt, Y              | Kitty                      | Open Kitty           |
+| Alt, I              | Firefox                    | Open Firefox         |
+| Alt, P              | Dwindle                    | Window Alignment     |
 | Alt, L              | Hyprlock                   | Screen Lock          |
 | Alt, V              | Hyprland                   | Window Floating      |
 | Alt, C              | Hyprland                   | Close Window         |
