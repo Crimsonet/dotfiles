@@ -1,5 +1,6 @@
-![desktop.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/desktop.preview.png)
-![lockscreen.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/lockscreen.preview.png)
+![desktop.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/desktop.preview.jpg)
+![lock.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/lock.preview.jpg)
+![sddm.preview.png](https://github.com/Crimsonet/Crimsonet/blob/main/preview/sddm.preview.jpg)
 
 <div align="center">
     <img src="https://img.shields.io/github/last-commit/Crimsonet/dotfiles?style=for-the-badge&color=ffb4a2&labelColor=201a19" alt="last-commit">
