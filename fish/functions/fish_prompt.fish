@@ -5,6 +5,6 @@ function fish_prompt
     else
         echo -n (set_color ff6c00)'谕'
     end
-    echo -n (set_color ff6c00)'❯ '
+    echo -n (set_color ff6c00)': '
     set_color normal
 end

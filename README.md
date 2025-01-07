@@ -18,7 +18,7 @@ such as those for system environments, desktop layouts, and so on.
 | Alt, R              | Tofi                       | App Launcher         |
 | Alt, Y              | Kitty                      | Open Kitty           |
 | Alt, I              | Firefox                    | Open Firefox         |
-| Alt, P              | Dwindle                    | Window Alignment     |
+| Alt, P              | Dwindle                    | Pseudo Tiling        |
 | Alt, L              | Hyprlock                   | Screen Lock          |
 | Alt, V              | Hyprland                   | Window Floating      |
 | Alt, C              | Hyprland                   | Close Window         |

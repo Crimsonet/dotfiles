@@ -1,6 +1,6 @@
 [Groups/0]
 # Group Name
-Name=All
+Name=Default
 # Layout
 Default Layout=us
 # Default Input Method
@@ -20,7 +20,7 @@ Layout=
 
 [Groups/1]
 # Group Name
-Name=Default
+Name=All
 # Layout
 Default Layout=us
 # Default Input Method
