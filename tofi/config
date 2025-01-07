@@ -11,7 +11,7 @@
 ### Text theming
 #
     text-color = #FFFFFF
-    prompt-color = #CCEEFF
+    prompt-color = #ff6c00
     prompt-background = #00000000
     prompt-background-padding = 0
     prompt-background-corner-radius = 0
@@ -26,7 +26,7 @@
     default-result-background-padding = 0, 0
     default-result-background-corner-radius = 0
     selection-color = #000000
-    selection-background = #CCEEFF
+    selection-background = #ff8b32
     selection-background-padding = 0, 8
     selection-background-corner-radius = 8
     selection-match-color = #00000000
@@ -55,11 +55,11 @@
 #
     width = 28%
     height = 72%
-    background-color = #2D2A2E64
+    background-color = #25180e65
     outline-width = 0
     outline-color = #080800
     border-width = 2
-    border-color = #cceeff
+    border-color = #ff6c1c
     corner-radius = 16
     padding-top = 6
     padding-bottom = 6
