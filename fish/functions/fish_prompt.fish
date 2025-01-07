@@ -3,7 +3,7 @@ function fish_prompt
     if fish_is_root_user
         echo -n (set_color cd0000)'诏'
     else
-        echo -n (set_color ff6c00)'令'
+        echo -n (set_color ff6c00)'谕'
     end
     echo -n (set_color ff6c00)'❯ '
     set_color normal
