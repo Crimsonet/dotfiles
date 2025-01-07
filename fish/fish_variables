@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3400
-SETUVAR fish_color_autosuggestion:d7d7af
+SETUVAR fish_color_autosuggestion:767676
 SETUVAR fish_color_cancel:\x2d\x2dreverse
 SETUVAR fish_color_command:FF9400
 SETUVAR fish_color_comment:5faf5f

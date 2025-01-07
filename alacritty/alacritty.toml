@@ -54,7 +54,7 @@ mods = "Control"
 program = "/usr/bin/fish"
 
 [window]
-opacity = 0.8
+opacity = 0.85
 
 [window.padding]
 x = 24
