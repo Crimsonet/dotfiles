@@ -22,7 +22,6 @@ import (
 )
 
 func main() {
-	// Create directories and copy font and fontconfig configuration files
 	err := os.MkdirAll("/etc/fonts", 0755)
 	if err != nil {
 		fmt.Println("Error creating /etc/fonts:", err)
@@ -53,7 +52,6 @@ func main() {
 		fmt.Println("Error copying fontconfig/fonts.conf.back:", err)
 	}
 
-	// Create directories and copy fcitx5 configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/fcitx5"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/fcitx5:", err)
@@ -84,7 +82,6 @@ func main() {
 		fmt.Println("Error copying fcitx5/profile:", err)
 	}
 
-	// Create directories and copy sddm theme files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".local/share/sddm/themes/arknt"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.local/share/sddm/themes/arknt:", err)
@@ -97,7 +94,6 @@ func main() {
 		fmt.Println("Error copying arknt/*:", err)
 	}
 
-	// Create directories and copy alacritty configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/alacritty"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/alacritty:", err)
@@ -116,7 +112,6 @@ func main() {
 		fmt.Println("Error copying alacritty/base16_default_dark.toml:", err)
 	}
 
-	// Create directories and copy fish configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/fish"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/fish:", err)
@@ -147,7 +142,6 @@ func main() {
 		fmt.Println("Error copying fish/functions/*:", err)
 	}
 
-	// Create directories and copy gtk configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/gtk-3.0"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/gtk-3.0:", err)
@@ -177,7 +171,6 @@ func main() {
 		fmt.Println("Error copying gtk-4.0/settings.ini:", err)
 	}
 
-	// Create directories and copy hypr configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/hypr"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/hypr:", err)
@@ -208,7 +201,6 @@ func main() {
 		fmt.Println("Error copying hypr/hyprpaper.conf:", err)
 	}
 
-	// Create directories and copy kitty configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/kitty"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/kitty:", err)
@@ -221,7 +213,6 @@ func main() {
 		fmt.Println("Error copying kitty/kitty.conf:", err)
 	}
 
-	// Create directories and copy mako configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/mako"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/mako:", err)
@@ -234,7 +225,6 @@ func main() {
 		fmt.Println("Error copying mako/config:", err)
 	}
 
-	// Create directories and copy tofi configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/tofi"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/tofi:", err)
@@ -247,7 +237,6 @@ func main() {
 		fmt.Println("Error copying tofi/config:", err)
 	}
 
-	// Create directories and copy vlc configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/vlc"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/vlc:", err)
@@ -266,7 +255,6 @@ func main() {
 		fmt.Println("Error copying vlc/vlcrc:", err)
 	}
 
-	// Create directories and copy waybar configuration files
 	err = os.MkdirAll(filepath.Join(os.Getenv("HOME"), ".config/waybar"), 0755)
 	if err != nil {
 		fmt.Println("Error creating ~/.config/waybar:", err)
@@ -285,7 +273,6 @@ func main() {
 		fmt.Println("Error copying waybar/style.css:", err)
 	}
 
-	// Check if the system is Arch Linux
 	var distro string
 	if _, err := os.Stat("/etc/arch-release"); err == nil {
 		distro = "Arch Linux"
@@ -299,7 +286,6 @@ func main() {
 	}
 	fmt.Println("System:", distro)
 
-	// Output a message based on the system language
 	outputConfigMessage()
 }
 
@@ -350,7 +336,6 @@ func installArchLinux() {
 		return
 	}
 
-	// Check if AMD GPU is present
 	cmd = exec.Command("lspci")
 	output, err := cmd.CombinedOutput()
 	if err != nil {
@@ -361,12 +346,10 @@ func installArchLinux() {
 		fmt.Println("Detected AMD GPU.")
 		installPackages("pacman", []string{"mesa", "lib32-mesa", "xf86-video-amdgpu", "vulkan-radeon", "lib32-vulkan-radeon"}, "--noconfirm")
 	}
-	// Check if Intel GPU is present
 	if strings.Contains(string(output), "VGA.*Intel") {
 		fmt.Println("Detected Intel GPU.")
 		installPackages("pacman", []string{"mesa", "lib32-mesa", "vulkan-intel", "lib32-vulkan-intel"}, "--noconfirm")
 	}
-	// Check if NVIDIA GPU is present
 	if strings.Contains(string(output), "VGA.*NVIDIA") {
 		fmt.Println("Detected NVIDIA GPU.")
 		installPackages("pacman", []string{"nvidia", "nvidia-utils"}, "--noconfirm")
@@ -422,7 +405,6 @@ func outputConfigMessage() {
 	default:
 		msg = "The configuration has been installed. Please adjust according to your own situation."
 	}
-	// 使用 ANSI 转义序列设置绿色输出
 	green := "\033[0;32m"
 	reset := "\033[0m"
 	fmt.Printf("%s%s%s\n", green, msg, reset)
