@@ -11,6 +11,7 @@
 This repository stores Linux desktop configurations based on Hyprland.
 The contents of the repository include various configuration files and tools, 
 such as those for system environments, desktop layouts, and so on.
+Here r the hotkeys u maybe need:
 
 | **𝐊𝐞𝐲𝐬**        | **𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧** | **𝐁𝐞𝐡𝐚𝐯𝐢𝐨𝐫** |
 |---------------------|----------------------------|----------------------|
