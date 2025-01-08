@@ -80,6 +80,8 @@ archPackages=(
 )
 
 # Create directories and copy fish configuration files
+sudo cp -r fish/ /root/.config/
+echo -e "${green}[$(date +%T)]${reset} >>> fish config has been installed for root."
 mkdir -p /home/"${username}"/.config/fish
 cp fish/conf.d/* /home/"${username}"/.config/fish/conf.d/
 echo -e "${green}[$(date +%T)]${reset} >>> fish/conf.d/* has been installed."
@@ -89,8 +91,6 @@ cp fish/fish_variables /home/"${username}"/.config/fish/
 echo -e "${green}[$(date +%T)]${reset} >>> fish/fish_variables has been installed."
 cp fish/functions/* /home/"${username}"/.config/fish/functions/
 echo -e "${green}[$(date +%T)]${reset} >>> fish/functions/* has been installed."
-sudo cp -r fish/ /root/.config/
-echo -e "${green}[$(date +%T)]${reset} >>> fish config has been installed for root."
 
 # Create directories and copy font and fontconfig configuration files
 sudo mkdir -p /etc/fonts
