@@ -40,7 +40,7 @@ such as those for system environments, desktop layouts, and so on.
 | CTRL, SHIFT, TAB    | MissionCenter              | Task Manager         |
 | CTRL, SHIFT, F12    | SystemMonitor              | Resource Monitor     |
 
-This repository follows the Unlicense agreement, and everyone is free to use,
+This repository follows the AGPL-3.0 license, and everyone is free to use,
 modify, and distribute the relevant configuration contents.
 If you have any questions or suggestions, feel free to give us feedback at any time.
 
