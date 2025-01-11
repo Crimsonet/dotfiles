@@ -36,8 +36,8 @@ Here r the hotkeys u maybe need:
 | SUPER, right        | Hyprland                   | Switch Focus         |
 | SUPER, up           | Hyprland                   | Switch Focus         |
 | SUPER, down         | Hyprland                   | Switch Focus         |
-| Alt, CTRL, SUPER, H | Hyprland                   | Restart Hyprland     |
 | Alt, CTRL, SUPER, W | Waybar                     | Restart Waybar       |
+| Alt, CTRL, SUPER, H | Hyprland                   | Force-stop Hyprland  |
 | CTRL, SHIFT, TAB    | MissionCenter              | Task Manager         |
 | CTRL, SHIFT, F12    | SystemMonitor              | Resource Monitor     |
 
@@ -46,14 +46,14 @@ modify, and distribute the relevant configuration contents.
 If you have any questions or suggestions, feel free to give us feedback at any time.
 
 | **𝐀𝐛𝐨𝐮𝐭** | **𝐎𝐩𝐞𝐧 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐞𝐩𝐨𝐬 𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞𝐝/𝐔𝐬𝐞𝐝** |
-|--------------|--------------------------------------------------------------------|
-| Hyprland     | https://github.com/Isoheptane/dotfiles                             |
-| Hyprland     | https://github.com/Tsuisteep/dotfiles                              |
-| Hyprlock     | https://github.com/linkfrg/dotfiles                                |
-| Hyprcursor   | https://github.com/hyprwm/hyprcursor                               |
-| Background   | https://github.com/Crimsonet/Crimsonet                                                              |
-| Waybar       | https://github.com/Isoheptane/dotfiles                             |
-| SDDM         | https://github.com/EliverLara/Sweet                                |
+|----------------|--------------------------------------------------------------------|
+| Hyprland       | https://github.com/Isoheptane/dotfiles                             |
+| Hyprland       | https://github.com/Tsuisteep/dotfiles                              |
+| Hyprlock       | https://github.com/linkfrg/dotfiles                                |
+| Hyprcursor     | https://github.com/hyprwm/hyprcursor                               |
+| Background     | https://github.com/Crimsonet/Crimsonet                             |
+| Waybar         | https://github.com/Isoheptane/dotfiles                             |
+| SDDM           | https://github.com/EliverLara/Sweet                                |
 
 | **𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐁𝐮𝐢𝐥𝐝 𝐈𝐧𝐟𝐨** | **𝐑𝐞𝐥𝐞𝐚𝐬𝐞** | **𝐕𝐞𝐫𝐬𝐢𝐨𝐧** |
 |------------------------------------------|--------------------|--------------------|
