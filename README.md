@@ -45,7 +45,7 @@ This repository follows the AGPL-3.0 license, and everyone is free to use,
 modify, and distribute the relevant configuration contents.
 If you have any questions or suggestions, feel free to give us feedback at any time.
 
-| **𝐁𝐚𝐬𝐞** | **𝐎𝐩𝐞𝐧 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐞𝐩𝐨𝐬 𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞𝐝/𝐔𝐬𝐞𝐝** |
+| **𝐀𝐛𝐨𝐮𝐭** | **𝐎𝐩𝐞𝐧 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐞𝐩𝐨𝐬 𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞𝐝/𝐔𝐬𝐞𝐝** |
 |--------------|--------------------------------------------------------------------|
 | Hyprland     | https://github.com/Isoheptane/dotfiles                             |
 | Hyprland     | https://github.com/Tsuisteep/dotfiles                              |
