@@ -51,6 +51,7 @@ If you have any questions or suggestions, feel free to give us feedback at any t
 | Hyprland     | https://github.com/Tsuisteep/dotfiles                              |
 | Hyprlock     | https://github.com/linkfrg/dotfiles                                |
 | Hyprcursor   | https://github.com/hyprwm/hyprcursor                               |
+| Background   | https://github.com/Crimsonet/Crimsonet                                                              |
 | Waybar       | https://github.com/Isoheptane/dotfiles                             |
 | SDDM         | https://github.com/EliverLara/Sweet                                |
 
