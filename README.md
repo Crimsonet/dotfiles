@@ -25,7 +25,6 @@ Here r the hotkeys u maybe need:
 | Alt, V              | Hyprland                   | Window Floating      |
 | Alt, C              | Hyprland                   | Close Window         |
 | Alt, F              | Hyprland                   | Full Screen          |
-| Alt, SHIFT, M       | Hyprland                   | Return to SDDM       |
 | Alt, left           | Hyprland                   | Switch Workspace     |
 | Alt, right          | Hyprland                   | Switch Workspace     |
 | Alt, $Number        | Hyprland                   | Switch Workspace     |
