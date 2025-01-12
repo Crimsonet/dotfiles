@@ -47,11 +47,9 @@ If you have any questions or suggestions, feel free to give us feedback at any t
 | **𝐀𝐛𝐨𝐮𝐭** | **𝐎𝐩𝐞𝐧 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐞𝐩𝐨𝐬 𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞𝐝/𝐔𝐬𝐞𝐝** |
 |----------------|--------------------------------------------------------------------|
 | Hyprland       | https://github.com/Isoheptane/dotfiles                             |
-| Hyprland       | https://github.com/Tsuisteep/dotfiles                              |
 | Hyprlock       | https://github.com/linkfrg/dotfiles                                |
 | Hyprcursor     | https://github.com/hyprwm/hyprcursor                               |
 | Background     | https://github.com/Crimsonet/Crimsonet                             |
-| Waybar         | https://github.com/Isoheptane/dotfiles                             |
 | SDDM           | https://github.com/EliverLara/Sweet                                |
 
 | **𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐁𝐮𝐢𝐥𝐝 𝐈𝐧𝐟𝐨** | **𝐑𝐞𝐥𝐞𝐚𝐬𝐞** | **𝐕𝐞𝐫𝐬𝐢𝐨𝐧** |
